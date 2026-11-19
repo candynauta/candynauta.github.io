@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Candela Valente · Terapias Holísticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ecdcbf; --paper-2:#e3d0ad; --ink:#17120d; --ink-soft:#4a3e2f; --rule:#17120d55;
+  --blackletter:'UnifrakturCook','UnifrakturMaguntia','Old English Text MT',Georgia,serif;
+  --body:'IM Fell English','Iowan Old Style',Georgia,serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#141009;--paper-2:#1f1910;--ink:#eadbbd;--ink-soft:#b9a888;--rule:#eadbbd55}
+}
+:root[data-theme="dark"]{--paper:#141009;--paper-2:#1f1910;--ink:#eadbbd;--ink-soft:#b9a888;--rule:#eadbbd55}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.15rem;line-height:1.55;text-align:center}
+main{max-width:520px;margin:0 auto;padding:2.2rem 1.4rem 3rem}
+h1,h2{font-family:var(--blackletter);font-weight:700;margin:0;line-height:1.05}
+h1{font-size:clamp(3rem,15vw,4.6rem)}
+h2{font-size:2.1rem}
+.sub{font-family:var(--blackletter);font-size:clamp(1.9rem,9vw,2.6rem);margin:.4rem 0 0}
+.moon{width:min(250px,70%);margin:1.2rem auto .4rem;display:block;color:var(--ink)}
+.rule{display:flex;align-items:center;gap:.8rem;margin:1.8rem 0 1.2rem;color:var(--ink)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--rule)}
+.rule svg{width:18px;height:18px;flex:none}
+.lead{margin:.6rem auto 0;max-width:30ch;color:var(--ink-soft);font-style:italic}
+.btn{display:inline-block;font-family:var(--blackletter);font-size:1.45rem;color:var(--paper);background:var(--ink);padding:.55rem 1.6rem;border-radius:2px;text-decoration:none;border:0;cursor:pointer;margin-top:1.1rem}
+.btn:hover{background:var(--ink-soft)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1rem}
+.chip{font:inherit;font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--ink);padding:.3rem .85rem;border-radius:99px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+#sugerencia{min-height:7.5rem;margin-top:1.2rem;padding:1rem;background:var(--paper-2);border:1px solid var(--rule)}
+#sugerencia p{margin:0}
+#sugerencia .btn{font-size:1.2rem;padding:.4rem 1.2rem;margin-top:.7rem}
+ul.servicios{list-style:none;margin:0;padding:0}
+.servicios li{border-bottom:1px solid var(--rule)}
+.servicios li:first-child{border-top:1px solid var(--rule)}
+.servicios a{display:block;padding:.75rem .5rem;color:var(--ink);text-decoration:none;font-size:1.25rem}
+.servicios a:hover{background:var(--paper-2)}
+.servicios small{display:block;font-size:.95rem;color:var(--ink-soft);font-style:italic}
+.modalidad{display:grid;gap:.4rem;margin:0}
+.contacto{display:flex;flex-direction:column;align-items:center;gap:.3rem}
+.contacto a.ig{color:var(--ink);font-size:1.2rem}
+.tel{font-size:1.5rem;letter-spacing:.04em}
+.turno{text-align:left;display:grid;gap:.9rem;margin-top:1rem}
+.turno label{display:block;font-size:1rem;color:var(--ink-soft)}
+.turno input,.turno select,.turno textarea{display:block;width:100%;margin-top:.25rem;font:inherit;font-size:1.1rem;color:var(--ink);background:var(--paper-2);border:1px solid var(--ink);border-radius:2px;padding:.55rem .7rem}
+.turno textarea{resize:vertical}
+.turno .btn{justify-self:center}
+.pie{margin-top:2.2rem;font-size:1rem;color:var(--ink-soft)}
+@media (prefers-reduced-motion:no-preference){.moon{animation:aparece 1.4s ease-out both}@keyframes aparece{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Candela Valente</h1>
+
+  <svg class="moon" viewBox="0 0 240 90" role="img" aria-label="Luna triple" fill="currentColor">
+    <path d="M70 6a40 40 0 1 0 0 78a30 40 0 1 1 0-78z"/>
+    <circle cx="120" cy="45" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M120 22l4.5 18.5L143 45l-18.5 4.5L120 68l-4.5-18.5L97 45l18.5-4.5z"/>
+    <path d="M170 6a40 40 0 1 1 0 78a30 40 0 1 0 0-78z"/>
+  </svg>
+
+  <p class="sub">Terapias Holísticas</p>
+  <p class="lead">Más de 11 años acompañando personas, hogares y mascotas.</p>
+  <a class="btn" href="https://wa.me/5491157194119?text=Hola%20Candela%2C%20quiero%20consultar%20por%20una%20sesi%C3%B3n" target="_blank" rel="noopener">Reservar sesión</a>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2 9 9 2-9 2-2 9-2-9-9-2 9-2z"/></svg></div>
+
+  <h2>¿Qué te trae por acá?</h2>
+  <div class="chips" id="chips">
+    <button class="chip" aria-pressed="false" data-k="amor">Amor y vínculos</button>
+    <button class="chip" aria-pressed="false" data-k="trabajo">Trabajo y dinero</button>
+    <button class="chip" aria-pressed="false" data-k="carga">Me siento cargado/a</button>
+    <button class="chip" aria-pressed="false" data-k="casa">Mi casa, local o auto</button>
+    <button class="chip" aria-pressed="false" data-k="mascota">Mi mascota</button>
+    <button class="chip" aria-pressed="false" data-k="aprender">Quiero aprender</button>
+  </div>
+  <div id="sugerencia" aria-live="polite"><p>Elegí una opción y te sugiero por dónde empezar.</p></div>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M12 2l5.9 18-15.4-11h19L6.1 20z"/></svg></div>
+
+  <h2>Servicios</h2>
+  <ul class="servicios" id="lista"></ul>
+  <p class="lead">Valores y promociones vigentes: consultá por WhatsApp.</p>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2 9 9 2-9 2-2 9-2-9-9-2 9-2z"/></svg></div>
+
+  <h2>Pedí tu turno</h2>
+  <div class="turno">
+    <label>Tu nombre<input id="t-nombre" type="text" autocomplete="name"></label>
+    <label>Servicio<select id="t-serv"></select></label>
+    <label>Modalidad<select id="t-mod"><option>Online</option><option>Presencial</option></select></label>
+    <label>Día y horario preferido<input id="t-dia" type="text" placeholder="Ej: martes a la tarde"></label>
+    <label>Fecha de nacimiento (para astrología y numerología)<input id="t-nac" type="text" inputmode="numeric" placeholder="DD/MM/AAAA"></label>
+    <label>Tu consulta principal<textarea id="t-msg" rows="3"></textarea></label>
+    <button class="btn" id="t-enviar" type="button">Enviar por WhatsApp</button>
+    <p class="lead">Candela te confirma disponibilidad, valor y forma de pago.</p>
+  </div>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2 9 9 2-9 2-2 9-2-9-9-2 9-2z"/></svg></div>
+
+  <h2>Clases e iniciaciones</h2>
+  <p class="lead">Si querés aprender tarot, astrología u otras herramientas, escribime y te cuento las próximas fechas y cupos.</p>
+  <a class="btn" href="https://wa.me/5491157194119?text=Hola%20Candela%2C%20quiero%20saber%20sobre%20las%20pr%C3%B3ximas%20clases%20e%20iniciaciones" target="_blank" rel="noopener">Quiero aprender</a>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2 9 9 2-9 2-2 9-2-9-9-2 9-2z"/></svg></div>
+
+  <h2>Modalidades</h2>
+  <p class="modalidade modalidad">
+    <span>Sesiones online</span>
+    <span>Sesiones presenciales</span>
+    <span>Clases e iniciaciones</span>
+  </p>
+
+  <div class="rule" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2 9 9 2-9 2-2 9-2-9-9-2 9-2z"/></svg></div>
+
+  <div class="contacto">
+    <a class="btn" href="https://wa.me/5491157194119" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+    <span class="tel">11 5719 4119</span>
+    <a class="ig" href="https://www.instagram.com/candynauta/" target="_blank" rel="noopener">@candynauta</a>
+  </div>
+  <p class="pie">Candela Valente · Terapias Holísticas</p>
+</main>
+
+<script>
+(function(){
+  var WA="https://wa.me/5491157194119?text=";
+  function link(t){return WA+encodeURIComponent("Hola Candela, quiero consultar por "+t);}
+  var servicios=[
+    ["Tarot","Lecturas para ver con claridad"],
+    ["Astrología","Carta natal y tránsitos"],
+    ["Numerología",""],
+    ["Registros Akáshicos",""],
+    ["Radiestesia",""],
+    ["Mediumnidad",""],
+    ["Limpiezas energéticas",""],
+    ["Armonizaciones",""],
+    ["Rituales",""],
+    ["Barras de Access",""],
+    ["Limpieza de espacios","Casas, locales, vehículos y mascotas"],
+    ["Clases e iniciaciones","Para quienes quieren aprender"]
+  ];
+  var ul=document.getElementById("lista");
+  servicios.forEach(function(s){
+    var li=document.createElement("li"),a=document.createElement("a");
+    a.href=link(s[0]);a.target="_blank";a.rel="noopener";a.textContent=s[0];
+    if(s[1]){var m=document.createElement("small");m.textContent=s[1];a.appendChild(m);}
+    li.appendChild(a);ul.appendChild(li);
+  });
+  var sug={
+    amor:["Tarot y Astrología","Para entender qué pasa en tus vínculos y qué momento astral estás transitando.","Tarot y Astrología"],
+    trabajo:["Numerología y Tarot","Para ordenar decisiones, ciclos y oportunidades en lo laboral.","Numerología y Tarot"],
+    carga:["Limpieza energética y Barras de Access","Para soltar cansancio, pesadez y recuperar el equilibrio.","una limpieza energética o Barras de Access"],
+    casa:["Limpieza de espacios","Casas, locales y vehículos: renovar la energía de los lugares donde pasás tiempo.","la limpieza de espacios"],
+    mascota:["Limpieza y armonización para mascotas","Un cuidado pensado para tu compañero de cuatro patas.","una sesión para mi mascota"],
+    aprender:["Clases e iniciaciones","Aprendé tarot, astrología y más con una maestra con más de 11 años de camino.","las clases e iniciaciones"]
+  };
+  var box=document.getElementById("sugerencia"),chips=document.querySelectorAll(".chip");
+  chips.forEach(function(c){
+    c.addEventListener("click",function(){
+      chips.forEach(function(x){x.setAttribute("aria-pressed","false");});
+      c.setAttribute("aria-pressed","true");
+      var s=sug[c.dataset.k];
+      box.innerHTML="";
+      var p=document.createElement("p");
+      var b=document.createElement("strong");b.textContent=s[0];
+      p.appendChild(b);p.appendChild(document.createElement("br"));
+      p.appendChild(document.createTextNode(s[1]));
+      var a=document.createElement("a");a.className="btn";a.href=link(s[2]);a.target="_blank";a.rel="noopener";a.textContent="Consultar por WhatsApp";
+      box.appendChild(p);box.appendChild(a);
+    });
+  });
+  var sel=document.getElementById("t-serv");
+  servicios.map(function(s){return s[0];}).concat(["Todavía no sé cuál elegir"]).forEach(function(n){
+    var o=document.createElement("option");o.textContent=n;sel.appendChild(o);
+  });
+  document.getElementById("t-enviar").addEventListener("click",function(){
+    function v(id){return document.getElementById(id).value.trim();}
+    var m="Hola Candela"+(v("t-nombre")?", soy "+v("t-nombre"):"")+". Quiero pedir un turno para: "+v("t-serv")+" ("+v("t-mod")+").";
+    if(v("t-dia"))m+=" Día y horario preferido: "+v("t-dia")+".";
+    if(v("t-nac"))m+=" Fecha de nacimiento: "+v("t-nac")+".";
+    if(v("t-msg"))m+=" Mi consulta: "+v("t-msg");
+    var a=document.createElement("a");a.href=WA+encodeURIComponent(m);a.target="_blank";a.rel="noopener";
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+  });
+})();
+</script>
+</body>
+</html>
